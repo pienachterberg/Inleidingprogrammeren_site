@@ -85,6 +85,10 @@ div {
     background-color: linen;
 }
 
+.pijlrechts {
+    margin-left: 120px;
+}
+
 #myownText {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -105,7 +109,4 @@ div {
 #hartje {
     width: 360px;
     height: 215px;
-}
-.pijlrechts {
-    margin-left: 120px;
 }
