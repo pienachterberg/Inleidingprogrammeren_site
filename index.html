@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hoofdgedeelte van het online dagboek</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,21 +13,63 @@
             <p>Voornaam: <input type="text" id="myText" value="Type your name"></p>
             <p>Klik op de knop "Klaar met invullen" hieronder om je gegevens op te slaan</p>
             <button onclick="myFunction()">Klaar met invullen</button>
+        <div>
             <h3>Hallo,</h3>
             <p id="nameUser"></p>
 
-    <img id="groet" src="images/Groet.png" alt="groet illustratie">
+    <h3>Leuk dat je er bent!</h3>
+    <img id="groet" src="images/Groetillustratie.png" alt="groet illustratie">
    
     <h3>Hoe voel je je vandaag?</h2>
     <p>Geef je dag een cijfer tussen 1-10</p>
+
     <section>
         <div class="licht">
             <img id="min" src="images/minus_icon.png" alt="min icon"> 
             <h2>0</h2>
             <img id="plus" src="images/plus_icon.png" alt="plus icon">
+            <p id="teHoog"> </p>
         </div>
     </section> 
- 
+
+    <h3>Lekker bezig tot nu toe!</h3>
+    <p>Scroll verder naar beneden om verder te gaan</p>
+    <img id='groet' src="images/Duimenomhoogillu.png" alt="illustratie poppetje met opstekende duimen">
+
+    <h3>Welk gevoel omschrijft jouw dag het best?</h3>
+    <p>Dubbelklik op een emotie om zo een passende tip te krijgen die jouw dag hopelijk beter zal maken!</p>
+    <section>
+        <div class="groen">
+            <p id="textTip1">Gelukkig</p>
+        </div>
+        <div class="groenblauw">
+            <p id="textTip2">Chagrijnig</p>
+        </div>
+    </section>
+    <section>
+        <div class="groenblauw">
+            <p id="textTip3">Verdrietig</p>
+        </div>
+        <div class="blauw">
+            <p id="textTip4">Woedend</p>
+        </div>
+    </section>
+    <section>
+        <div class="blauw">
+            <p id="textTip5">Anstig</p>
+        </div>
+        <div class="groen">
+            <p id="textTip6">Energieloos</p>
+        </div>
+    </section>
+
+    <p>Schrijf een kort verhaal over de leuke en tegenvallers van vandaag: <input type="text" id="myownText" value="Vul hier in.."></p>
+    
+    <nav>
+        <ul>
+            <li><a href="eindpagina.html">Naar eindpagina</a></li>
+        </ul>
+    </nav>
     <script src="script.js"></script>
 </body>
 </html>
