@@ -5,9 +5,11 @@
     font-family: sans-serif;
     text-decoration: none;
 }
+
 h1 {
-    text-align: center;
+    text-align: left;
 }
+
 h3 {
     padding-bottom: 8px;
     padding-top: 8px;
