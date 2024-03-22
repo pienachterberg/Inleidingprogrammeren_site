@@ -20,6 +20,11 @@ h3 {
     text-align: center;
 }
 
+h4 {
+    padding-top: 8px;
+    text-align: center;
+}
+
 p {
     padding-bottom: 8px;
     text-align: center;
@@ -87,6 +92,10 @@ div {
 
 .pijlrechts {
     margin-left: 120px;
+}
+
+.buttonTwee {
+    margin-left: 105px;
 }
 
 #myownText {

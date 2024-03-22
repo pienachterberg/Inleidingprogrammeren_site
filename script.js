@@ -1,7 +1,7 @@
 console.log("Welkom,")
 
 const naamveld = document.querySelector('#voorNaam')
-var buttonElement = document.querySelector("img")
+let buttonElement = document.querySelector("img")
 
 function groet(naam, typeGroet) {
     console.log("groet persoon")
@@ -15,18 +15,7 @@ function myFunction() {
     document.getElementById("nameUser").innerHTML = x;
 }
 
-let leeftijd = 20
-const naam = "Pien"
-
-let toegangsLeefijd = 10
-let mijnLeeftijd = 16 
-if (mijnLeeftijd >= toegangsLeefijd) {
-    console.log("Welkom, je bent oud genoeg!")
-} else {
-    console.log("Helaas je bent nog niet oud genoeg")
-}
-
-let getal = 1;
+let getal = 0;
 const plusKnop = document.querySelector('#plus')
 const minKnop = document.querySelector('#min')
 const getalVeld = document.querySelector('h2')
@@ -37,26 +26,33 @@ function updateGetalVeld(nieuw) {
     getalVeld.textContent = nieuw;
 }
 
+//* Als extra aanvulling op de oefening van een + en - veld maken heb ik een maximum toegevoegd.*//
 function verhoogGetal() {
     getal = getal + 1;
     if (getal > 10) {
-        teHoogGetal.textContent = 'Te hoog, verminder het cijfer'
-        updateGetalVeld('');
+        getal = 10;
+        teHoogGetal.textContent = 'Het maximum van 10 is bereikt';
     }
     else {
+        teHoogGetal.textContent = '';
+        //* De text 'Het maxiumum van 10 is bereikt' gaat weg uit beeld is het cijfer minder dan 10.*//
         updateGetalVeld(getal)
     }
 }
 
 function verlaagGetal() {
     getal = getal - 1;
+    if (getal < 0) {
+        getal = 0;
+        //* Bij deze heb ik geen tekst ingesteld, maar het getal kan niet lager dan 0*//
+    }
+    else {
     updateGetalVeld(getal);
+    }
 }
 
 plusKnop.addEventListener('click',verhoogGetal)
 minKnop.addEventListener('click',verlaagGetal)
-
-verlaagGetal();
 
 let textElement1 = document.querySelector("#textTip1")
 let textElement2 = document.querySelector("#textTip2")
@@ -93,6 +89,16 @@ textElement6.addEventListener("click",veranderTextTip6);
 
 function myStory() {
     var x = document.getElementById("myownText").value;
-    document.getElementById("nameUser").innerHTML = x;
+    document.getElementById("mijnVerhaal").innerHTML = x;
 }
+
+let textVier = "Bedankt voor het invullen, je antwoord is opgeslagen!";
+let kop = document.querySelector("h4");
+kop.textContent = "Bijna klaar...";
+
+const buttonKlik = document.querySelector(".buttonTwee");
+function veranderInhoud() {
+    kop.textContent = textVier;
+}
+buttonKlik.addEventListener("click", veranderInhoud);
 
