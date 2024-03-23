@@ -80,12 +80,12 @@ function veranderTextTip6() {
     textElement6.textContent = "Zorg dat je optijd slaapt, genoeg eet en voldoende sport (bouw evt. een routine op)";
 }
 
-textElement1.addEventListener("click",veranderTextTip1);
-textElement2.addEventListener("click",veranderTextTip2);
-textElement3.addEventListener("click",veranderTextTip3);
-textElement4.addEventListener("click",veranderTextTip4);
-textElement5.addEventListener("click",veranderTextTip5);
-textElement6.addEventListener("click",veranderTextTip6);
+textElement1.addEventListener("dubbelclick",veranderTextTip1);
+textElement2.addEventListener("dubbelclick",veranderTextTip2);
+textElement3.addEventListener("dubbelclick",veranderTextTip3);
+textElement4.addEventListener("dubbelclick",veranderTextTip4);
+textElement5.addEventListener("dubbelclick",veranderTextTip5);
+textElement6.addEventListener("dubbelclick",veranderTextTip6);
 
 function myStory() {
     var x = document.getElementById("myownText").value;
